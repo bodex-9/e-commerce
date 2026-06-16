@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+*
+{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Inter", sans-serif;
+}
+@theme {
+  --color-stars: #FFAD33;
+  --color-secondr: #DB4444;
+  --color-input: #FAFAFA;
+  --color-bage: #F5F5F5;
+  --color-hoverr: #E07575;
+  --color-greens: #00FF66;
+  --font-eater: "Eater", serif;
+  --color-icon:#c1c1c1;
+}
+.slide-2 button{
+  color:#1D4F6F;
+  
+}
+.slide-2 button:hover
+{
+  background:#8dc1e1 ;
+  transition: all ease .3s;
+  color:#fff;
+}
+.slide-0 button{
+  color: #2A2B2D;
+}
+.slide-0 button:hover{
+    background:#585c5f ;
+  transition: all ease .3s;
+  color:#fff;
+}
+.slide-1 button:hover{
+    background:#dee3e6 ;
+  transition: all ease .3s;
+  color:#000;
+}
+
+
+
+
+
