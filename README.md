@@ -1,16 +1,150 @@
-# React + Vite
+# 🛒 Exclusive - E-Commerce Website
+<img width="1895" height="866" alt="image" src="https://github.com/user-attachments/assets/efedc454-185e-4dbd-9fbd-382d83823e94" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Exclusive is a modern and fully responsive E-Commerce web application built with **React**.
+The project was originally designed in **Figma** and then transformed into a fully functional web application with a focus on performance, user experience, and clean code architecture.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://exclusive77.netlify.app/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🔍 Search products by name
+* 📂 Filter products by category
+* 🔃 Sort products by:
 
-## Expanding the ESLint configuration
+  * Alphabetically
+  * Highest Rating
+  * Lowest Price
+  * Highest Price
+* 📄 Pagination
+* 🛍️ Product Details page
+* ❤️ Wishlist
+* 🛒 Shopping Cart
+* 💾 Cart & Wishlist persistence using LocalStorage
+* 👤 User Profile
+* 🔐 Firebase Authentication
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Email & Password
+  * Google Sign-In
+  * Forgot Password
+* 🛡️ Protected Routes
+* 🚫 Guest Routes
+* 📱 Fully Responsive Design
+* ⚠️ Error Handling
+* ⏳ Skeleton Loading
+* 📬 About & Contact Pages
+
+---
+
+## 🛠️ Tech Stack
+
+* React
+* Redux Toolkit
+* React Router DOM
+* Firebase Authentication
+* Firestore Database
+* Axios
+* Tailwind CSS
+* Framer Motion
+* Swiper.js
+* React Toastify
+* SweetAlert2
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots of your application here.
+
+Example:
+
+* Home Page
+* Product Details
+* Cart
+* Wishlist
+* Authentication
+* Mobile Responsive
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/exclusive.git
+```
+
+Go to the project directory
+
+```bash
+cd exclusive
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+VITE_API_KEY=your_api_key
+VITE_AUTH_DOMAIN=your_auth_domain
+VITE_PROJECT_ID=your_project_id
+VITE_STORAGE_BUCKET=your_storage_bucket
+VITE_MESSAGING_SENDER_ID=your_sender_id
+VITE_APP_ID=your_app_id
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│── assets/
+│── components/
+│── firebase/
+│── pages/
+│── redux/
+│── routes/
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## 🎯 Future Improvements
+
+* Product Reviews
+* Order History
+* Payment Integration (Stripe)
+* Admin Dashboard
+* Dark Mode
+
+---
+
+## 👨‍💻 Author
+
+**Abdullah Mahrous**
+
+* LinkedIn:[https://www.linkedin.com/in/abdullah-mhrous-70805a389/]
+* GitHub: [https://github.com/bodex-9]
+
+---
+
+⭐ If you like this project, don't forget to give it a star!
