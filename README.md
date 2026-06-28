@@ -1,16 +1,141 @@
-# React + Vite
+<img width="1861" height="808" alt="Screenshot 2026-06-17 025627" src="https://github.com/user-attachments/assets/89ea5ace-4c4d-4baa-a76c-bdb5c0afc5ce" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛍️ Exclusive — E-Commerce Website
 
-Currently, two official plugins are available:
+Exclusive is a modern and fully responsive **E-Commerce web application** built with **React**.
+The project started as a **Figma design** and was transformed into a complete real-world application with a strong focus on **UI/UX, performance, and scalability**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project helped me work through real development challenges and improve my problem-solving and frontend architecture skills.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 Live Demo: [Add Live Demo Link]
+📁 GitHub Repository: [Add GitHub Link]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+### 🛒 Shopping Experience
+
+* Browse and explore products
+* Search products by name
+* Filter products by category
+* Sort products by:
+
+  * Name
+  * Rating
+  * Price
+* Product details page
+* Pagination for smooth navigation
+
+### ❤️ User Experience
+
+* Wishlist functionality
+* Shopping Cart
+* Persistent data using **LocalStorage**
+* Skeleton Loading for better loading experience
+* Error Handling
+* Fully Responsive Design
+
+### 👤 User Account
+
+* Profile Page
+* Authentication System:
+
+  * Sign in with Google
+  * Email & Password Authentication
+  * Reset Password via Email
+  * Protected Routes
+  * Guest Routes
+
+### 📬 Additional Pages
+
+* About Page
+* Contact Page
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* Redux Toolkit
+* React Router DOM
+* Tailwind CSS
+* Framer Motion
+* Axios
+* Swiper
+
+### Backend & Services
+
+* Firebase Authentication
+* Firestore Database
+
+### UI & Notifications
+
+* React Toastify
+* SweetAlert
+
+---
+
+## 📱 Responsive Design
+
+The website is optimized for:
+
+✅ Mobile
+✅ Tablet
+✅ Desktop
+
+---
+
+## 🎯 Project Goals
+
+* Convert a real Figma design into production-ready code
+* Improve state management using Redux Toolkit
+* Build a complete authentication flow
+* Enhance user experience and application performance
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Future Improvements
+
+* Payment Integration
+* Order Tracking
+* Product Reviews
+* Dark Mode
+* Admin Dashboard
+
+---
+
+## 🙌 Feedback
+
+Feedback and suggestions are always appreciated.
+I'm continuously learning and improving with every new project.
+
+If you like the project, feel free to ⭐ the repository.
