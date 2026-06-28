@@ -46,8 +46,9 @@ export const Cart = createSlice({
                 }
                 else{
                      const newState = state.filter((item) => String(item.id) !== String(action.payload.id))
+                     localStorage.setItem("cartitems",JSON.stringify(newState))
                         return newState;
-                         localStorage.setItem("cartitems",JSON.stringify(newState))
+                         
                 }
                 
             },

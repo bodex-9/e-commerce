@@ -9,6 +9,7 @@ import { updateProfile } from 'firebase/auth'
 import { doc,setDoc } from 'firebase/firestore'
 import { db } from '../firebase/firebase'
 import auth from '../firebase/firebase'
+import { AuthErrorCodes } from "firebase/auth";
 import { motion } from 'framer-motion'
 const Signup = () => {
     const [user,setUser] = useState("")
@@ -29,6 +30,9 @@ const Signup = () => {
          }
             catch(error)
         {
+             if (error.code === AuthErrorCodes.POPUP_CLOSED_BY_USER) {
+                return;
+                }
            const cleanMessage = (error.message.replace("Firebase:","").trim());
             toast.error(cleanMessage,{style:{
                 background:'black',
@@ -57,6 +61,7 @@ const Signup = () => {
 
         catch(error)
         {
+           
            const cleanMessage = (error.message.replace("Firebase:","").trim());
             toast.error(cleanMessage,{style:{
                 background:'black',
@@ -77,7 +82,7 @@ const Signup = () => {
               
                 <input value={user}     onChange={e => setUser(e.target.value)} type='text' placeholder='Name' className='border-b border-gray-400     outline-0 text-[15px] pb-1 mb-2' />
                 <input value={email}    onChange={e => setEmail(e.target.value)} type='text' placeholder='Email' className='border-b    outline-0   text-[15px] mb-2 border-gray-400 pb-1' />
-                <input value={password} onChange={e => setPassword(e.target.value)} type='text' placeholder='password' className='border-b border-gray-400 outline-0  pb-1 text-[15px] mb-2' />
+                <input value={password} onChange={e => setPassword(e.target.value)} type='password' placeholder='password' className='border-b border-gray-400 outline-0  pb-1 text-[15px] mb-2' />
 
                 <button className='bg-secondr text-white py-2 px-4 text-sm rounded-md hover:bg-hoverr transition-all duration-300 cursor-pointer '>Create Account</button>
                 <div className=" relative flex justify-center">

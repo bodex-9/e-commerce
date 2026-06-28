@@ -47,6 +47,7 @@ const Navbar = ({user}) => {
     const wishitems = useSelector(state => state.wish)
     const [menu, setmenu] = useState(false);
     const [search,setSearch] = useState("");
+    const [open,setOpen] = useState(false);
    
     const allproduct = useAllProducts();
     const filteredProduct = allproduct.filter((product) => product.title.toLowerCase().includes(search.toLowerCase()));
@@ -117,13 +118,17 @@ const Navbar = ({user}) => {
                     <IoCartOutline   className='text-2xl sm:text-3xl'/>
                     </Link>
                 </div>
-                <div onClick={handleAccount} className="group relative">
+                <div onClick={()=> setOpen(!open)} className="">
+                <div onClick={handleAccount} className=" relative">
+                    
                 <LuUserRound className='text-2xl sm:text-3xl cursor-pointer ' />
-                {user && ( <div className=" absolute top-full right-0 z-50 mt-2 bg-white/80 backdrop-blur-md shadow-xl opacity-0 group-hover:opacity-100 w-40 flex flex-col items-center gap-3 p-4 rounded-lg transition-all duration-300">  
+                {user && open && ( <div className=" absolute top-full right-0 z-50 mt-2 bg-white/80 backdrop-blur-md shadow-xl  w-40 flex flex-col items-center gap-3 p-4 rounded-lg transition-all duration-300">  
                 <span onClick={handleLogout} className='text-black/80 cursor-pointer hover:text-secondr transition-all duration-300'>Log Out</span>
                 </div>)}
                
                 </div>
+                </div>
+
                   <div className="menu text-3xl sm:hidden">
                 <IoMdMenu onClick={() => setmenu(!menu)} />
 
